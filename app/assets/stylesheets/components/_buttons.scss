@@ -1,0 +1,25 @@
+
+.btn-adconseil {
+  color: white;
+  background-color: #0545A1;
+
+  &:hover {
+    color: white;
+    background-color: rgb(108, 108, 108);
+    opacity: 0.7;
+    transition: ease-in 0.3s;
+  }
+}
+
+.btn-adconseil-secondary {
+  background-color: white;
+  color: #0545A1;
+  border: 1px solid #0545A1;
+
+  &:hover {
+    color: white;
+    background-color: grey;
+    opacity: 0.7;
+    transition: ease-in 0.3s;
+  }
+}

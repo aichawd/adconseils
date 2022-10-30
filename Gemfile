@@ -45,11 +45,23 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
+# La base de la base pour le front
+gem 'bootstrap', '~> 5.2.1'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
 
 # Use Cloudinary image management
 gem "cloudinary"
+
+# Use Fontawesome for icons
+gem "font-awesome-sass", "~> 6.1"
+
+# Use simple form for nice looking forms
+gem "simple_form", github: "heartcombo/simple_form"
+
+# Autoprefixer is a tool to add browser prefixes to CSS rules using the Can I Use database
+gem "autoprefixer-rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

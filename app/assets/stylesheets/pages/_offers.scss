@@ -1,0 +1,29 @@
+/* Small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+  .offer img {
+    width: 90%;
+  }
+  .offer-content {
+    width: 90%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .offer img {
+    width: 30%;
+  }
+  .offer-content {
+    width: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .offer img {
+    width: 20%;
+  }
+  .offer-content {
+    width: 50%;
+  }
+}

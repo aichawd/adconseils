@@ -1,0 +1,29 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <section class="top-nav">
+    <div>
+      <a href="<%= root_path %>">
+        <%= image_tag("logo_adconseil.png") %>
+      </a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+      <li>
+        <a class="nav-link-adconseil hover-underline-animation" href="<%= root_path %>">Accueil</a>
+      </li>
+      <li>
+        <a class="nav-link-adconseil hover-underline-animation"
+        href="<%= offres_path %>">
+          Nos offres
+        </a>
+      </li>
+      <li>
+        <a class="nav-link-adconseil hover-underline-animation" href="<%= clients_path %>">Nos clients</a>
+      </li>
+      <li>
+        <a class="btn btn-adconseil" href="<%= contact_path %>">Contactez-nous</a>
+      </li>
+    </ul>
+  </section>
