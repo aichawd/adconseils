@@ -36,10 +36,30 @@
 }
 
 .a-propos img {
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 .a-propos-contact {
   color: grey;
   font-size: 14px;
+}
+
+/* Small devices (phones, 1000px and down) */
+@media only screen and (max-width: 1000px) {
+  .a-propos img {
+    width: 90%;
+  }
+  .a-propos-content {
+    width: 90%;
+  }
+}
+
+/* Large devices (laptops/desktops, 1001px and up) */
+@media only screen and (min-width: 1001px) {
+  .a-propos img {
+    width: 40%;
+  }
+  .a-propos-content {
+    width: 50%;
+  }
 }
