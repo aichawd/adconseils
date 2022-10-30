@@ -32,7 +32,19 @@
 .client-logo img {
   width: 80px;
   height: auto;
-  margin: auto 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .client-logo {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .client-logo {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .a-propos img {
