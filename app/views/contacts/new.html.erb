@@ -1,0 +1,42 @@
+
+
+
+<div class="container">
+  <h1>Contact</h1>
+
+  <p>
+  Siège social : Boulevard Général De Gaulle <br>
+  BP : 16 585; Dakar FANN <br>
+  Tél: (221) 33 823 65 57 <br>
+  E-mail: adconseildakar@gmail.com <br>
+  </p>
+
+  <h2>Envoyez-nous un message</h2>
+
+  <%= form_for @contact do |f| %>
+    <div class="form-group mb-5">
+      <%= f.label :name, 'Votre nom' %><br>
+      <%= f.text_field  :name, required: true, class: "form-control bg-white" %><br>
+
+      <%= f.label :email, 'Votre adresse email' %><br>
+      <%= f.text_field :email, required: true, class: "form-control bg-white",
+      placeholder: "exemple: name@domain.com" %><br>
+
+      <%= f.label :sujet, 'Sujet' %><br>
+      <%= f.text_field  :sujet, required: true, class: "form-control bg-white",
+      placeholder: "exemple: Organisation de formation" %><br>
+
+      <%= f.label :message, 'Votre message' %><br>
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "form-control bg-white",
+            placeholder: "Écrivez votre message ici"%><br>
+
+      <div class= "d-none">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+
+      <%= f.submit 'Envoyer', class: "btn btn-adconseil" %>
+    </div>
+  <% end %>
+
+</div>
